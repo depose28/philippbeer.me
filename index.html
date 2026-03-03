@@ -2114,14 +2114,13 @@
 
       .panel-player {
         order: 10;
-        width: 100%;
+        flex: 1 1 calc(100% - 80px);
+        min-width: 0;
         margin-top: 4px;
       }
 
       .player-screen {
-        width: 100% !important;
-        max-width: none !important;
-        justify-content: center;
+        width: 100%;
       }
 
       .player-title {
@@ -2130,6 +2129,9 @@
 
       .music-toggle-wrap {
         order: 11;
+        margin-top: 4px;
+        flex: 0 0 auto;
+        align-self: center;
       }
 
       .monitor {
