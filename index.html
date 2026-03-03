@@ -848,6 +848,27 @@
       color: inherit;
       transition: border-color 0.2s, background 0.2s;
       display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .invest-card-logo {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      filter: grayscale(1) brightness(0.7);
+      opacity: 0.18;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    .invest-card:hover .invest-card-logo {
+      opacity: 0.3;
+    }
+    .invest-card-logo.invert {
+      filter: grayscale(1) invert(1) brightness(0.35);
     }
 
     .invest-card:hover {
@@ -1794,6 +1815,10 @@
       .computer-bottom {
         border-radius: 0;
       }
+
+      .computer-model {
+        display: none;
+      }
     }
 
     @media (max-width: 600px) {
@@ -1976,10 +2001,11 @@
             <p class="section-label">[ NOW ]</p>
             <div class="now-content">
               <p>
-                Running <strong>w3.wave</strong>. Angel investing across AI and deep tech.
-                Building AI tools on weekends with Claude Code and Cursor.
-                Raising three kids in Berlin. Thinking about what taste
-                means when everyone can build.
+                Running <strong>w3.wave</strong>, a liquid token fund. Angel investing across
+                AI, deep tech, and robotics. Vibe coding products in my free
+                time. Raising two kids in Berlin. Reading and writing about
+                markets, technology, and philosophy &mdash; and what it means to be
+                human in the age of it all.
               </p>
               <p class="now-updated">last_updated: March 2026</p>
             </div>
@@ -2100,42 +2126,52 @@
 
             <div class="invest-grid">
               <a class="invest-card" href="https://spacex.com" target="_blank" rel="noopener noreferrer">
+                <img class="invest-card-logo" src="logos/spacex.png" alt="">
                 <div class="invest-card-name">SpaceX</div>
                 <div class="invest-card-desc">Space exploration &amp; transport</div>
               </a>
               <a class="invest-card" href="https://corgi.insure" target="_blank" rel="noopener noreferrer">
+                <img class="invest-card-logo" src="logos/corgi.png" alt="">
                 <div class="invest-card-name">Corgi AI</div>
                 <div class="invest-card-desc">AI insurance</div>
               </a>
               <a class="invest-card" href="https://skild.ai" target="_blank" rel="noopener noreferrer">
+                <img class="invest-card-logo" src="logos/skild.png" alt="">
                 <div class="invest-card-name">Skild AI</div>
                 <div class="invest-card-desc">Robotics foundation model</div>
               </a>
               <a class="invest-card" href="https://lightmatter.co" target="_blank" rel="noopener noreferrer">
+                <img class="invest-card-logo" src="logos/lightmatter.png" alt="">
                 <div class="invest-card-name">Lightmatter</div>
                 <div class="invest-card-desc">Photonic computing for AI</div>
               </a>
               <a class="invest-card" href="https://d-matrix.ai" target="_blank" rel="noopener noreferrer">
+                <img class="invest-card-logo" src="logos/dmatrix.png" alt="">
                 <div class="invest-card-name">D-Matrix</div>
                 <div class="invest-card-desc">In-memory AI inference chips</div>
               </a>
               <a class="invest-card" href="https://apptronik.com" target="_blank" rel="noopener noreferrer">
+                <img class="invest-card-logo invert" src="logos/apptronik.png" alt="">
                 <div class="invest-card-name">Apptronik</div>
                 <div class="invest-card-desc">Humanoid robotics</div>
               </a>
               <a class="invest-card" href="https://efficient.computer" target="_blank" rel="noopener noreferrer">
+                <img class="invest-card-logo" src="logos/efficient.png" alt="">
                 <div class="invest-card-name">Efficient Computer</div>
                 <div class="invest-card-desc">Ultra-low-power edge processors</div>
               </a>
               <span class="invest-card" style="cursor: default;">
+                <img class="invest-card-logo invert" src="logos/impossible.png" alt="">
                 <div class="invest-card-name">Impossible Computer</div>
                 <div class="invest-card-desc">Stealth computing startup (Naval Ravikant)</div>
               </span>
               <a class="invest-card" href="https://reflectorbital.com" target="_blank" rel="noopener noreferrer">
+                <img class="invest-card-logo" src="logos/reflect.png" alt="">
                 <div class="invest-card-name">Reflect Orbital</div>
                 <div class="invest-card-desc">Sunlight-on-demand from space</div>
               </a>
               <a class="invest-card" href="https://foundation.bot" target="_blank" rel="noopener noreferrer">
+                <img class="invest-card-logo" src="logos/foundation.png" alt="">
                 <div class="invest-card-name">Foundation</div>
                 <div class="invest-card-desc">General-purpose humanoid robotics</div>
               </a>
