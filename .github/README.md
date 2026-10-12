@@ -211,8 +211,16 @@ with Tapestry. Omit the former "Side projects" label because the section now
 includes private work. Use ordinary, unlinked list text for this block, with no project-row
 hover treatment or arrows. It stays visible on mobile. The fund-research detail
 lives here rather than repeating in "These days."
-Keep private client names, investment lists, performance figures, and private
-repository links out of the public copy. Additional private projects need his direction.
+Keep private client names, unapproved investment names, performance figures, and
+private repository links out of the public copy. Additional private projects need his direction.
+
+Philipp approved a selected personal portfolio of 17 names on 12 October 2026. Show it in
+one native, initially collapsed "Selected personal investments" disclosure between the
+projects section and "On GitHub". Use alphabetical names, muted text, and dot
+dividers without categories, logos, links, metrics, or a pitch. Keep "Skild AI
+(exited)" as supplied. This is a selection, not his complete investment history. Common Thread vehicle
+investments are not included in this disclosure; Philipp may add those separately later.
+The approved names live in `index.html`. Additional names need his direction.
 
 The illustration is a replaceable, generated placeholder, not a real location
 or a personal photograph. Its prompt and provenance are in `.github/image-provenance.md`.
