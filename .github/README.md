@@ -231,6 +231,12 @@ Serve a copy of the public files with a static HTTP server. Preview servers
 should expose only the HTML, CSS, JavaScript, fonts, favicon, and image assets, not this repository
 or `.git`. Use `noindex` on a shared preview, not on the production page.
 
+The existing preview uses a Tailscale Funnel path backed by a public-file-only
+server on port 3127. On Philipp's current VPN setup, accepting Tailscale DNS
+caused host lookups to time out. Keep the existing DNS resolver when reconnecting
+this preview (`--accept-dns=false`), and verify ordinary internet access as well
+as the preview. Do not replace other Funnel routes or expose the repository root.
+
 Check desktop and mobile layouts, narrow widths, keyboard focus, contact links,
 project links, image loading, text contrast, and browser zoom. There is no
 framework build or typecheck. Run `node --check assets/theme.js`,
