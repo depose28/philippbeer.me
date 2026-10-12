@@ -211,8 +211,17 @@ with Tapestry. Omit the former "Side projects" label because the section now
 includes private work. Use ordinary, unlinked list text for this block, with no project-row
 hover treatment or arrows. It stays visible on mobile. The fund-research detail
 lives here rather than repeating in "These days."
-Keep private client names, investment lists, performance figures, and private
-repository links out of the public copy. Additional private projects need his direction.
+Keep private client names, unapproved investment names, performance figures, and
+private repository links out of the public copy. Additional private projects need his direction.
+
+Philipp approved a selected personal portfolio of 17 names on 12 October 2026.
+Show it in one native, initially collapsed "Selected personal investments"
+disclosure between the projects section and "On GitHub". Use alphabetical names, muted text, and dot
+dividers without categories, logos, links, metrics, or a pitch. Keep "Skild AI
+(exited)" as supplied. This is a selection, not his complete investment history.
+Common Thread vehicle investments are not included in this disclosure; Philipp
+may add those separately later.
+The approved names live in `index.html`. Additional names need his direction.
 
 The illustration is a replaceable, generated placeholder, not a real location
 or a personal photograph. Its prompt and provenance are in `.github/image-provenance.md`.
@@ -222,6 +231,12 @@ or a personal photograph. Its prompt and provenance are in `.github/image-proven
 Serve a copy of the public files with a static HTTP server. Preview servers
 should expose only the HTML, CSS, JavaScript, fonts, favicon, and image assets, not this repository
 or `.git`. Use `noindex` on a shared preview, not on the production page.
+
+The existing preview uses a Tailscale Funnel path backed by a public-file-only
+server on port 3127. On Philipp's current VPN setup, accepting Tailscale DNS
+caused host lookups to time out. Keep the existing DNS resolver when reconnecting
+this preview (`--accept-dns=false`), and verify ordinary internet access as well
+as the preview. Do not replace other Funnel routes or expose the repository root.
 
 Check desktop and mobile layouts, narrow widths, keyboard focus, contact links,
 project links, image loading, text contrast, and browser zoom. There is no

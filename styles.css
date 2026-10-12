@@ -74,7 +74,8 @@ a {
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+summary:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 5px;
 }
@@ -435,6 +436,60 @@ h2 {
 
 .private-work li + li {
   margin-top: 8px;
+}
+
+.investments {
+  margin-top: 28px;
+}
+
+.investments summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  min-height: 44px;
+  color: var(--body);
+  font-size: 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.investments summary::-webkit-details-marker {
+  display: none;
+}
+
+.investments summary:hover {
+  color: var(--ink);
+}
+
+.investments-chevron {
+  flex: none;
+  color: var(--muted);
+}
+
+.investments[open] .investments-chevron {
+  transform: rotate(90deg);
+}
+
+.investment-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4px;
+  margin: 8px 0 0;
+  padding: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+  list-style: none;
+}
+
+.investment-list li {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.investment-divider {
+  margin-inline: 8px;
 }
 
 .activity {
